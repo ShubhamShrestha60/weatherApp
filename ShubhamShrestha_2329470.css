@@ -1,0 +1,157 @@
+/* importing the font from the api */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Unbounded:wght@200;400;700&display=swap");
+/* adding styles for the body */
+body{
+	font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,water/?Nature');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    width:520px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #333;
+	font-family: "Unbounded", cursive;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.city-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.date {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.weather-condition {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.weather-icon img {
+    max-width: 100%;
+    height: auto;
+    filter: invert(1);
+}
+
+.temperature {
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.temperature h1 {
+    margin: 0;
+}
+
+.rainfall, .wind-speed, .humidity, .pressure {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+/* styling for the search bar */
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.search-box button {
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #3e8e41;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 600px) {
+    .weather-container {
+        width: 100%;
+    }
+    .search-box input {
+        width: 70%;
+    }
+    .search-box button {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+    }
+    .city-name {
+        font-size: 20px;
+    }
+    .weather-condition {
+        font-size: 16px;
+    }
+    .temperature {
+        font-size: 60px;
+    }
+    .rainfall, .wind-speed, .humidity, .pressure {
+        font-size: 14px;
+    }
+    .search-box input {
+        width: 60%;
+    }
+    .search-box button {
+        width: 40%;
+    }
+}
+
+.button{
+    background-color:#21c452;
+    color:aliceblue;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+ }
+
+
+ .button:hover{
+    border: 2px solid #00f921;
+    cursor:pointer;
+ }
